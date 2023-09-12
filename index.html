@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TITLE</title>
+    <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+        }
+        canvas {
+            margin: 0px;
+            padding: 0px;
+            width: 1192px;
+            height: 852px;
+            display: flex;
+            border: 1px solid white;
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            width: 250px;
+            position: absolute;
+            bottom: 0px;
+            left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>if keyboard appears to not be working, click inside the white rectangle - then press one of the arrow keys, there will be orange added around the border</p>
+    <canvas id="glcanvas" tabindex='1'></canvas>
+    <!-- Minified and statically hosted version of https://github.com/not-fl3/macroquad/blob/master/js/mq_js_bundle.js -->
+        <script src="https://not-fl3.github.io/miniquad-samples/mq_js_bundle.js"></script>
+
+    <script>load("chasing-dragon-tails.wasm");</script> <!-- Your compiled wasm file -->
+</body>
+
+</html>
